@@ -2,7 +2,7 @@
 
 The following document describes my own writing rules for development.
 
-This repository wasn't created to be a complete coding guide, it's just a way to documentate ~~my OCD~~ and share my coding style to receive contributions and improvements from other developers.
+This repository wasn't created to be a complete coding guide, it's just a way to document ~~my OCD~~ and share my coding style to receive contributions and improvements from other developers.
 
 This is a living document and contributions are always welcome!
 
@@ -16,11 +16,11 @@ This is a living document and contributions are always welcome!
   - [HTML Character Encoding](#html-character-encoding)
   - [HTML Attribute Order](#html-attribute-order)
   - [HTML Performance](#html-performance)
-  - [HTML Base Code](#html-base-code)
+  - [HTML Starting Code](#html-starting-code)
 - [Pug](#pug)
   - [Pug Syntax](#pug-syntax)
   - [Pug Comments](#pug-comments)
-  - [Pug Base Code](#pug-base-code)
+  - [Pug Starting Code](#pug-starting-code)
 - [CSS](#css)
   - [CSS Syntax](#css-syntax)
   - [CSS Declaration Order](#css-declaration-order)
@@ -28,6 +28,10 @@ This is a living document and contributions are always welcome!
   - [CSS Performance](#css-performance)
   - [CSS Media Queries](#css-media-queries)
 - [Sass](#sass)
+  - [Sass Syntax](#sass-syntax)
+  - [Sass Performance](#sass-performance)
+  - [Sass Media Queries](#sass-media-queries)
+  - [Sass Comments](#sass-comments)
 - [PHP](#php)
 - [JavaScript](#js)
 - [C++](#c)
@@ -39,7 +43,7 @@ This is a living document and contributions are always welcome!
 
 These rules are valid for every section in this file:
 - Always use soft tabs and never mix tabs and spaces.
-- Never left trailing spaces (This Sublime Text plugin can help you -> [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces))
+- Never leave trailing spaces (This Sublime Text plugin can help you -> [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces)).
 - Always end a file with a single blank line.
 - Always use the Unix `LF` (linefeed) line ending.
 - Always encode file with `UTF-8`.
@@ -47,7 +51,7 @@ These rules are valid for every section in this file:
 
 ## Commits
 
-GitHub is a global website, so our commits must be accessible for everyone. To make easier the contribuction and interaction from anyone in a project, all commit messages, pull requests or issues must to be written in  ~~JavaScript~~ **English**.
+GitHub is a global website, so our commits must be accessible for everyone. To make the contribution and interaction easier for anyone in a project, all commit messages, pull requests or issues must to be written in  ~~JavaScript~~ **English**.
 
 You shouldn't use Past or Present Continuous tenses for commit messages, those should be in Imperative Present tense. (It's a [Git recommendation](http://git.kernel.org/cgit/git/git.git/tree/Documentation/SubmittingPatches?id=HEAD#n111))
 
@@ -75,7 +79,7 @@ The main influence for that HTML section rules is the [Code Guide by @mdo](https
 - [HTML Character Encoding](#html-character-encoding)
 - [HTML Attribute Order](#html-attribute-order)
 - [HTML Performance](#html-performance)
-- [HTML Base Code](#html-base-code)
+- [HTML Starting Code](#html-starting-code)
 
 ### HTML Syntax
 
@@ -115,7 +119,7 @@ Don't include a `/` in self-closing elements (This isn't XHTML :wink:).
 <hr />
 ```
 
-Separate block elements by a blank line and agroup the inners block elements.
+Separate block elements by a blank line and group the inner block together.
 
 ```html
 <!-- Good -->
@@ -165,7 +169,7 @@ Don't omit optional closing tags
 
 ### 2.2. HTML Comments
 
-Always add a space between the comment tag and his content.
+Always add a space between the comment tag and it's content.
 
 ```html
 <!-- This is a good HTML comment -->
@@ -246,7 +250,7 @@ Always minify your code (only the build version, of course) in static projects (
 </html>
 ```
 
-### HTML Base Code
+### HTML Starting Code
 
 The following code is a HTML base for faster start the projects.
 
@@ -291,7 +295,7 @@ I'm using Pug as main template engine.
 
 - [Pug Syntax](#pug-syntax)
 - [Pug Comments](#pug-comments)
-- [Pug Base Code](#pug-base-code)
+- [Pug Starting Code](#pug-starting-code)
 
 ### Pug Syntax
 
@@ -321,7 +325,7 @@ button.btn(data-component='collapse')
 button.btn(data-component="collapse")
 ```
 
-Insert the title of block, separate block element by a blank line and agroup the inners block elements.
+Insert the title of block, separate block element by a blank line and group the inner block together.
 
 ```pug
 //- Good
@@ -345,7 +349,7 @@ main.main(role='main')
   section.content
 ```
 
-To small elements with only one child, you may prefer the inline pug syntax.
+For small elements with only one child, you may prefer the inline pug syntax.
 
 ```pug
 //- Good
@@ -356,7 +360,7 @@ a(href='/')
   img(src='assets/img/logo.svg' alt='Logo')
 ```
 
-To small elements consider using the Pug's interpolation syntax.
+For small elements consider using the Pug's interpolation syntax.
 
 ```pug
 //- Good
@@ -387,7 +391,7 @@ Follow this rule to add comments in Pug.
 
 Comments using `//-` aren't compiled.
 
-### Pug Base Code
+### Pug Starting Code
 
 The following code is a Basic Pug code for a faster startup.
 
@@ -426,7 +430,7 @@ html(lang='en')
 
 This section was mainly influenced by [Code Guide by @mdo](https://github.com/mdo/code-guide).
 
-### CSS Summary
+### CSS Index
 
 - [CSS Syntax](#css-syntax)
 - [CSS Declaration Order](#css-declaration-order)
@@ -498,7 +502,7 @@ The opening bracket must to be at same line that the last selector and separated
 
 Always put a single space between a property and his value (and after all colons).
 
-> Alignment: don't align property values, it's look pretty, but is just more work to maintain (and to search)
+> Alignment: don't align property values, it looks pretty, but is just more work to maintain (and to search)
 
 ```css
 /* Good */
@@ -584,7 +588,7 @@ Separate each ruleset by a blank line.
 }
 ```
 
-Use lowercase, shorthand hex values and avoid specifying units in zero-values (because zero is zero, doesn't matters the unit).
+Use lowercase, shorthand hex values and avoid specifying units in zero-values (because zero is zero, doesn't matter the unit).
 
 ```css
 /* Good */
@@ -600,7 +604,7 @@ Use lowercase, shorthand hex values and avoid specifying units in zero-values (b
 }
 ```
 
-**IMPORTANT:** Nowadays every site must to be accessible for any device, so you should prefer relative units over the absolute ones
+**IMPORTANT:** Nowadays every site must to accessible for any device, so you should prefer relative units over the absolute ones
 
 ### CSS Declaration Order
 
@@ -616,7 +620,7 @@ Positioning comes first because it can remove an element from the normal flow of
 
 Everything else takes place inside the component or without impacting the previous two sections, and thus they come last.
 
-> I know, in bigger projects with many involved people, it's hard to maintain that order, so, you can use alphabetical order instead (Tip: if you use Sublime Text, just select the lines and press `F9`), the important is keeping a logic.
+> I know, in bigger projects with many people involved, it's hard to maintain that order, so, you can use alphabetical order instead (Tip: if you use Sublime Text, just select the lines and press `F9`), the important is to follow a logic.
 
 ```css
 /* Good (Preferred way) */
@@ -762,7 +766,7 @@ header { ... }
 section { ... }
 ```
 
-Nest only when need change the class comportament with interference for other class. Keep the nested on max of three elements.
+Only nest if it's necessary to modify the behavior of the class when there is an interference from another class. Keep the nested on max of three elements.
 
 ```css
 /* Good */
@@ -776,7 +780,7 @@ Nest only when need change the class comportament with interference for other cl
 
 > **NEVER** use `!important` and keep in mind that if you need to, there's something wrong
 
-Always minify the build CSS code (and save as `.min.css`). You can use task builders or even node for that.
+Always minify the build CSS code (and save as `.min.css`). You can use task builders or even node to do that.
 
 ```css
 /* Good */
@@ -793,7 +797,7 @@ Always minify the build CSS code (and save as `.min.css`). You can use task buil
 
 ### CSS Media Queries
 
-Start the development with generic rules with and add media queries with mobile first (always using `min-width` as query condition).
+Start the development with generic rules and add media queries with mobile first (always using `min-width` as query condition).
 
 ```css
 /* Good */
@@ -854,6 +858,48 @@ Keep the media queries as close as possible to their relevant rule sets. Don't b
 
 ## Sass
 
+The main influence for that section is the [Sass Guidelines](https://sass-guidelin.es/).
+
+### Sass Index
+
+- [Sass Syntax](#sass-syntax)
+- [Sass Performance](#sass-performance)
+- [Sass Media Queries](#sass-media-queries)
+- [Sass Comments](#sass-comments)
+
+### Sass Syntax
+
+Always use **soft tabs** with **2 spaces width** and be consistent (never mix spaces and tabs).
+
+> Lately I'm using the SCSS Syntax, but
+
+```sass
+// Good
+.read-more {
+  color: #87b0dd;
+
+  &:hover {
+    color: #4b4b4a;
+  }
+}
+
+// Bad
+.read-more {
+    color: #87b0dd;
+
+    &:hover {
+        color: #4b4b4d;
+    }
+}
+```
+
+### Sass Performance
+
+### Sass Media Queries
+
+### Sass Comments
+
+
 ## PHP
 
 ## JavaScript
@@ -862,12 +908,13 @@ Keep the media queries as close as possible to their relevant rule sets. Don't b
 
 ## References
 
-No one works alone, so I've wrote this document based on:
+No one works alone, so I've written this document based on:
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [Felipe Fialho Coding Style](https://github.com/LFeh/coding-style/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
 
+And my special thanks to [Thais Lins](github.com/thaislins) who helped me a lot with the translation of this document :v:
 
 ## License
 

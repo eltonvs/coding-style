@@ -4,7 +4,7 @@ The following document describes my own writing rules for development.
 
 This repository wasn't created to be a complete coding guide, it's just a way to documentate ~~my OCD~~ and share my coding style to receive contributions and improvements from other developers.
 
-This is a living document and contributions are aways welcome!
+This is a living document and contributions are always welcome!
 
 ## Index
 
@@ -42,12 +42,12 @@ The main influence for that HTML section rules is the [Code Guide by @mdo](https
 
 ### HTML Index
 
-1. [HTML Syntax](#html-syntax)
-1. [HTML Comments](#html-comments)
-1. [HTML Character Encoding](#html-encoding)
-1. [HTML Attribute Order](#html-attribute-order)
-1. [HTML Performance](#html-performance)
-1. [HTML Base Code](#html-base)
+1. [HTML Syntax](#21-html-syntax)
+1. [HTML Comments](#22-html-comments)
+1. [HTML Character Encoding](#23-html-encoding)
+1. [HTML Attribute Order](#24-html-attribute-order)
+1. [HTML Performance](#25-html-performance)
+1. [HTML Base Code](#26-html-base)
 
 ### 2.1. HTML Syntax
 
@@ -260,9 +260,9 @@ I'm using Pug as main template engine.
 
 ### Pug Index
 
-1. [Pug Syntax](#pug-syntax)
-1. [Pug Comments](#pug-comments)
-1. [Pug Base Code](#pug-base)
+1. [Pug Syntax](#31-pug-syntax)
+1. [Pug Comments](#32-pug-comments)
+1. [Pug Base Code](#33-pug-base)
 
 ### 3.1. Pug Syntax
 
@@ -395,11 +395,11 @@ This section was mainly influenced by [Code Guide by @mdo](https://github.com/md
 
 ### CSS Summary
 
-1. [CSS Syntax](#css-syntax)
-1. [CSS Declaration Order](#css-order)
-1. [CSS Class Names](#css-class-name)
-1. [CSS Performance](#css-performance)
-1. [CSS Media Queries](#css-media-queries)
+1. [CSS Syntax](#41-css-syntax)
+1. [CSS Declaration Order](#42-css-order)
+1. [CSS Class Names](#43-css-class-name)
+1. [CSS Performance](#44-css-performance)
+1. [CSS Media Queries](#45-css-media-queries)
 
 ### 4.1. CSS Syntax
 

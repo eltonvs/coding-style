@@ -262,7 +262,7 @@ I'm using Pug as main template engine.
 
 1. [Pug Syntax](#31-pug-syntax)
 1. [Pug Comments](#32-pug-comments)
-1. [Pug Base Code](#33-pug-base)
+1. [Pug Base Code](#33-pug-base-code)
 
 ### 3.1. Pug Syntax
 
@@ -396,8 +396,8 @@ This section was mainly influenced by [Code Guide by @mdo](https://github.com/md
 ### CSS Summary
 
 1. [CSS Syntax](#41-css-syntax)
-1. [CSS Declaration Order](#42-css-order)
-1. [CSS Class Names](#43-css-class-name)
+1. [CSS Declaration Order](#42-css-declaration-order)
+1. [CSS Class Names](#43-css-class-names)
 1. [CSS Performance](#44-css-performance)
 1. [CSS Media Queries](#45-css-media-queries)
 

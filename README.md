@@ -6,19 +6,46 @@ This repository wasn't created to be a complete coding guide, it's just a way to
 
 This is a living document and contributions are always welcome!
 
-## Index
+## Table of Contents
 
-1. [Commits](#1-commits)
-1. [HTML](#2-html)
-1. [Pug](#3-pug)
-1. [CSS](#4-css)
-1. [SASS](#5-sass)
-1. [JavaScript](#6-js)
-1. [C++](#7-c)
-1. [References](#8-references)
-1. [License](#9-license)
+- [Main Rules](#main-rules)
+- [Commits](#commits)
+- [HTML](#html)
+  - [HTML Syntax](#html-syntax)
+  - [HTML Comments](#html-comments)
+  - [HTML Character Encoding](#html-character-encoding)
+  - [HTML Attribute Order](#html-attribute-order)
+  - [HTML Performance](#html-performance)
+  - [HTML Base Code](#html-base-code)
+- [Pug](#pug)
+  - [Pug Syntax](#pug-syntax)
+  - [Pug Comments](#pug-comments)
+  - [Pug Base Code](#pug-base-code)
+- [CSS](#css)
+  - [CSS Syntax](#css-syntax)
+  - [CSS Declaration Order](#css-declaration-order)
+  - [CSS Class Names](#css-class-names)
+  - [CSS Performance](#css-performance)
+  - [CSS Media Queries](#css-media-queries)
+- [Sass](#sass)
+- [PHP](#php)
+- [JavaScript](#js)
+- [C++](#c)
+- [References](#references)
+- [License](#license)
 
-## 1. Commits
+
+## Main Rules
+
+These rules are valid for every section in this file:
+- Aways use soft tabs and never mix tabs and spaces.
+- Never left trailing spaces (This Sublime Text plugin can help you -> [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces))
+- Aways end a file with a single blank line.
+- Always use the Unix `LF` (linefeed) line ending.
+- Aways encode file with `UTF-8`.
+
+
+## Commits
 
 GitHub is a global website, so our commits must be accessible for everyone. To make easier the contribuction and interaction from anyone in a project, all commit messages, pull requests or issues must to be written in  ~~JavaScript~~ **English**.
 
@@ -36,24 +63,23 @@ git commit -m "Added something on something else"
 git commit -m "Adding something on something else"
 ```
 
-## 2. HTML
+
+## HTML
 
 The main influence for that HTML section rules is the [Code Guide by @mdo](https://github.com/mdo/code-guide).
 
 ### HTML Index
 
-1. [HTML Syntax](#21-html-syntax)
-1. [HTML Comments](#22-html-comments)
-1. [HTML Character Encoding](#23-html-character-encoding)
-1. [HTML Attribute Order](#24-html-attribute-order)
-1. [HTML Performance](#25-html-performance)
-1. [HTML Base Code](#26-html-base-code)
+- [HTML Syntax](#html-syntax)
+- [HTML Comments](#html-comments)
+- [HTML Character Encoding](#html-character-encoding)
+- [HTML Attribute Order](#html-attribute-order)
+- [HTML Performance](#html-performance)
+- [HTML Base Code](#html-base-code)
 
-### 2.1. HTML Syntax
+### HTML Syntax
 
 Aways use **soft tabs** with **2 spaces width** and be consistent (never mix spaces and tabs).
-
-Important: **Never left trailing spaces** (This Sublime Text plugin can help you -> [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces))
 
 ```html
 <!-- Good -->
@@ -146,7 +172,7 @@ Aways add a space between the comment tag and his content.
 <!--This is a bad HTML comment-->
 ```
 
-### 2.3. HTML Character Encoding
+### HTML Character Encoding
 
 Always use UTF-8 for character encoding.
 
@@ -156,7 +182,7 @@ Always use UTF-8 for character encoding.
 </head>
 ```
 
-### 2.4. HTML Attribute Order
+### HTML Attribute Order
 
 HTML attributes should be in this order to facilitate reading.
 
@@ -177,7 +203,7 @@ HTML attributes should be in this order to facilitate reading.
 <img class="img-rounded" src="..." alt="...">
 ```
 
-### 2.5. HTML Performance
+### HTML Performance
 
 You don't need to specify the type attribute when including CSS or JavaScript files (like `text/css` or `text/JavaScript`).
 
@@ -220,7 +246,7 @@ Always minify your code (only the build version, of course) in static projects (
 </html>
 ```
 
-### 2.6. HTML Base Code
+### HTML Base Code
 
 The following code is a HTML base for faster start the projects.
 
@@ -257,17 +283,17 @@ The following code is a HTML base for faster start the projects.
 ```
 
 
-## 3. Pug
+## Pug
 
 I'm using Pug as main template engine.
 
 ### Pug Index
 
-1. [Pug Syntax](#31-pug-syntax)
-1. [Pug Comments](#32-pug-comments)
-1. [Pug Base Code](#33-pug-base-code)
+- [Pug Syntax](#pug-syntax)
+- [Pug Comments](#pug-comments)
+- [Pug Base Code](#pug-base-code)
 
-### 3.1. Pug Syntax
+### Pug Syntax
 
 Aways use **soft tabs with 2 spaces width** and be consistent (never mix spaces and tabs).
 
@@ -348,7 +374,7 @@ p Lorem Ipsum
   | dolor sit amet.
 ```
 
-### 3.2. Pug Comments
+### Pug Comments
 
 Follow this rule to add comments in Pug.
 
@@ -361,7 +387,7 @@ Follow this rule to add comments in Pug.
 
 Comments using `//-` aren't compiled.
 
-### 3.3. Pug Base Code
+### Pug Base Code
 
 The following code is a Basic Pug code for a faster startup.
 
@@ -396,19 +422,19 @@ html(lang='en')
 ```
 
 
-## 4. CSS
+## CSS
 
 This section was mainly influenced by [Code Guide by @mdo](https://github.com/mdo/code-guide).
 
 ### CSS Summary
 
-1. [CSS Syntax](#41-css-syntax)
-1. [CSS Declaration Order](#42-css-declaration-order)
-1. [CSS Class Names](#43-css-class-names)
-1. [CSS Performance](#44-css-performance)
-1. [CSS Media Queries](#45-css-media-queries)
+- [CSS Syntax](#css-syntax)
+- [CSS Declaration Order](#css-declaration-order)
+- [CSS Class Names](#css-class-names)
+- [CSS Performance](#css-performance)
+- [CSS Media Queries](#css-media-queries)
 
-### 4.1. CSS Syntax
+### CSS Syntax
 
 Aways use **soft tabs with 2 spaces width** and be consistent (never mix spaces and tabs).
 
@@ -576,7 +602,7 @@ Use lowercase, shorthand hex values and avoid specifying units in zero-values (b
 
 **IMPORTANT:** Nowadays every site must to be accessible for any device, so you should prefer relative units over the absolute ones
 
-### 4.2. CSS Declaration Order
+### CSS Declaration Order
 
 Related property declarations should be grouped together following the order:
 
@@ -675,7 +701,7 @@ Everything else takes place inside the component or without impacting the previo
 }
 ```
 
-### 4.3. CSS Class Names
+### CSS Class Names
 
 Use names in lowercase and separate them using dashes.
 
@@ -708,7 +734,7 @@ Avoid giving too short names for classes and always choose meaningful names that
 .block { ... }
 ```
 
-### 4.4. CSS Performance
+### CSS Performance
 
 Avoid using ID's.
 
@@ -765,7 +791,7 @@ Always minify the build CSS code (and save as `.min.css`). You can use task buil
 }
 ```
 
-### 4.5 CSS Media Queries
+### CSS Media Queries
 
 Start the development with generic rules with and add media queries with mobile first (always using `min-width` as query condition).
 
@@ -825,13 +851,16 @@ Keep the media queries as close as possible to their relevant rule sets. Don't b
 }
 ```
 
-## 5. SASS
 
-## 6. JavaScript
+## Sass
 
-## 7. C++
+## PHP
 
-## 8. References
+## JavaScript
+
+## C++
+
+## References
 
 No one works alone, so I've wrote this document based on:
 
@@ -840,6 +869,6 @@ No one works alone, so I've wrote this document based on:
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
 
 
-## 9. License
+## License
 
 This project is licensed under the terms of the [MIT](LICENSE) license.

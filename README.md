@@ -38,11 +38,11 @@ This is a living document and contributions are always welcome!
 ## Main Rules
 
 These rules are valid for every section in this file:
-- Aways use soft tabs and never mix tabs and spaces.
+- Always use soft tabs and never mix tabs and spaces.
 - Never left trailing spaces (This Sublime Text plugin can help you -> [Trailing Spaces](https://github.com/SublimeText/TrailingSpaces))
-- Aways end a file with a single blank line.
+- Always end a file with a single blank line.
 - Always use the Unix `LF` (linefeed) line ending.
-- Aways encode file with `UTF-8`.
+- Always encode file with `UTF-8`.
 
 
 ## Commits
@@ -79,7 +79,7 @@ The main influence for that HTML section rules is the [Code Guide by @mdo](https
 
 ### HTML Syntax
 
-Aways use **soft tabs** with **2 spaces width** and be consistent (never mix spaces and tabs).
+Always use **soft tabs** with **2 spaces width** and be consistent (never mix spaces and tabs).
 
 ```html
 <!-- Good -->
@@ -165,7 +165,7 @@ Don't omit optional closing tags
 
 ### 2.2. HTML Comments
 
-Aways add a space between the comment tag and his content.
+Always add a space between the comment tag and his content.
 
 ```html
 <!-- This is a good HTML comment -->
@@ -295,7 +295,7 @@ I'm using Pug as main template engine.
 
 ### Pug Syntax
 
-Aways use **soft tabs with 2 spaces width** and be consistent (never mix spaces and tabs).
+Always use **soft tabs with 2 spaces width** and be consistent (never mix spaces and tabs).
 
 ```pug
 //- Good
@@ -436,7 +436,7 @@ This section was mainly influenced by [Code Guide by @mdo](https://github.com/md
 
 ### CSS Syntax
 
-Aways use **soft tabs with 2 spaces width** and be consistent (never mix spaces and tabs).
+Always use **soft tabs with 2 spaces width** and be consistent (never mix spaces and tabs).
 
 ```css
 /* Good */

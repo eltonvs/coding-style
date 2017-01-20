@@ -44,10 +44,10 @@ The main influence for that HTML section rules is the [Code Guide by @mdo](https
 
 1. [HTML Syntax](#21-html-syntax)
 1. [HTML Comments](#22-html-comments)
-1. [HTML Character Encoding](#23-html-encoding)
+1. [HTML Character Encoding](#23-html-character-encoding)
 1. [HTML Attribute Order](#24-html-attribute-order)
 1. [HTML Performance](#25-html-performance)
-1. [HTML Base Code](#26-html-base)
+1. [HTML Base Code](#26-html-base-code)
 
 ### 2.1. HTML Syntax
 

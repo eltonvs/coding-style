@@ -232,9 +232,12 @@ The following code is a HTML base for faster start the projects.
 <head>
   <!-- Metadata -->
   <meta charset="UTF-8">
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- SEO -->
+  <meta name="description" content="">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/ico/favicon.ico">
@@ -363,16 +366,19 @@ Comments using `//-` aren't compiled.
 The following code is a Basic Pug code for a faster startup.
 
 ```pug
-include includes/variables
+include includes/constants
 
 doctype html
 html(lang='en')
   head
     //- Metadata
     meta(charset='UTF-8')
-    meta(name='description' content='')
     meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
     meta(name='format-detection' content='telephone=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+
+    //- SEO
+    meta(name='description' content='')
 
     //- Favicon
     link(rel='shortcut icon' href='ico/favicon.ico')
@@ -385,6 +391,7 @@ html(lang='en')
 
     //- Title
     title Page Title
+
   body
 ```
 

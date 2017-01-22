@@ -871,7 +871,7 @@ The main influence for that section is the [Sass Guidelines](https://sass-guidel
 
 Always use **soft tabs** with **2 spaces width** and be consistent (never mix spaces and tabs).
 
-> Lately I'm using the SCSS Syntax, but
+> I'm using the SCSS Syntax
 
 ```sass
 // Good

@@ -914,7 +914,7 @@ No one works alone, so I've written this document based on:
 * [Felipe Fialho Coding Style](https://github.com/LFeh/coding-style/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
 
-And my special thanks to [Thais Lins](github.com/thaislins) who helped me a lot with the translation of this document :v:
+And my special thanks to [Thais Lins](https://github.com/thaislins) who helped me a lot with the translation of this document :v:
 
 ## License
 
